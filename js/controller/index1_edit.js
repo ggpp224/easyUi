@@ -19,15 +19,17 @@ App.controller = Ambow.extend(App.Controller,{
 			Ambow.apply(this.params,G_URL_APPEND);
 		}
 		
+		$('#cc').combobox('setValues', '3');
+		
 
 	},
 	
 	init: function(){
-		var me = this;
+		/*var me = this;
 		//请求数据然后编译渲染模板
 		Ambow.getJSON('model.json',function(data){
 			me.reRender(data);
-		});
+		});*/
 	},
 	
 	//监听事件

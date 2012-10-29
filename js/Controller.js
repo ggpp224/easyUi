@@ -32,6 +32,8 @@
 			//渲染面包屑
 			me.renderCurmbs();
 			
+			$.parser.parse();
+			
 			//处理一些需js添加的dom元素
 	 		me.render();
 			
@@ -45,7 +47,7 @@
 	 		//绑定一些事件
 	 		me.control();
 	 		
-	 		$.parser.parse();
+	 		
  	},
  	
  	reRender: function(data){
