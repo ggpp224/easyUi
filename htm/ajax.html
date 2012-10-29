@@ -1,0 +1,67 @@
+<style>
+	#ajax div{
+		margin:10px 20px 40px 10px;
+		
+	}
+</style>
+<div id="ajax">
+	Ajax请求演示。。。<br>
+	<div>
+	<input type="button" id="getBtn"  value="get请求"><br>
+		<pre>
+		Ambow.get('footer.html',{a:'111',b:'222'},function(data){
+			alert(data);
+		});
+		</pre>
+	</div>
+	
+	<div>
+	<input type="button" id="postBtn"  value="post请求">
+		<pre>
+			Ambow.post({
+				url:G_URL.list,
+				params:{
+					a:'111',
+					b:'222'
+				},
+				success:function(data){
+					alert(data.total);
+				},
+				error:function(){
+					//如果返回的不是json格式会error
+					alert('error');
+				}
+			});
+		</pre>
+	</div>
+	<div >
+		<input type="button" id="getJsonBtn"  value="post请求">
+		<pre>
+			Ambow.getJSON(G_URL.list,{a:'1111'},function(data){
+				alert(Ambow.encode(data));
+			});
+		</pre>
+	</div>
+	<div>
+		<input type="button" id="ajaxBtn"  value="ajax方法请求">
+		<pre>
+			Ambow.ajax({
+				url:G_URL.list,
+				method:'post',
+				params:{
+					a:'111',
+					b:'222'
+				},
+				success:function(data){
+					alert(data.total);
+				},
+				error:function(){
+					//如果返回的不是json格式会error
+					alert('error');
+				}
+			});
+		</pre>
+	</div>
+
+</div>
+

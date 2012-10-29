@@ -1,0 +1,45 @@
+/* 自定义风格样式 style.css */
+
+/* Layout 框架 
+------------------------------------------------------------------------*/
+/* Header */
+#header		{ margin:0; padding:0; height:42px; background:#333; }
+
+/* Footer */
+#footer		{ padding:8px; height:18px; font-weight:bold; color:#ccc; background:#666; }
+
+/* Nav */
+#nav		{ width:180px; overflow:hidden; }
+
+/* Content */
+#content	{ padding:10px;}
+
+
+/* Custom 自定义
+------------------------------------------------------------------------*/
+
+/* Logo */
+.logo				{ padding:0 10px; font-size:20px; color:#fff; line-height:40px; }
+.logo i				{ margin-right:4px; font-size:inherit; color:#f60; }
+
+/* Information */
+.logininfo 			{ float:right; margin-top:10px; padding:0 10px 0 0; color:#ccc;}
+.logininfo b		{ color:#fff; }
+.logininfo a		{ color:#f00; }
+
+/* navCatalog */
+.navCatalog a		{ display:block; padding:6px; color:#666; border-bottom:1px solid #eee; text-decoration:none;}
+.navCatalog a:hover	{ color:#000; font-weight:bold; background:#ddd;}
+
+/* 面包屑 */
+#breadcrumb 		{ padding:0 10px; height:30px; line-height:30px; background:#eee;}
+
+pre {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px dotted #778855;
+    font-family: "Courier New",monospace;
+    font-size: 12px;
+    margin: 10px 0 0;
+    padding: 10px;
+    width: 580px;
+}

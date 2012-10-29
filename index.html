@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Template</title>
+<link rel="stylesheet" type="text/css" href="resources/css/custom.css">
+<link type="text/css" href="resources/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="js/lib/eui/themes/default/easyui.css" />
+<link rel="stylesheet" href="js/lib/eui/themes/icon.css" />
+
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script src="js/lib/eui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/lib/history.js"></script>
+<script src="js/lib/eui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/lib/base.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/url.js"></script>
+<script type="text/javascript" src="js/Controller.js"></script>
+<script type="text/javascript" src="js/controller/SearchList.js"></script>
+
+</head>
+<body  class="easyui-layout">
+
+	<!-- 头部load: header.html -->
+	<div data-options="region:'north', border:false, href:'header.html'" id="header"></div>
+
+	<!-- 左侧load: nav.html -->
+    <div data-options="region:'west', split:true, title:'导航', href:'nav.html'" id="nav"></div>
+    
+    <!-- 中间 Content -->
+    <div data-options="region:'center'" class="panel">
+    	<!-- 面包屑 -->
+    	<div id="breadcrumb"></div>
+        <!-- 正文区 -->
+        <div id="content"></div>
+    </div>
+    
+    <!-- 版权load: footer.html -->
+    <div data-options="region:'south', border:false, href:'footer.html'" id="footer"></div>
+
+<script type="text/javascript" src="js/History.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

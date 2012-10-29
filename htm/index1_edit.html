@@ -1,0 +1,31 @@
+<form id="search_form" class="search">
+	<div class="easyui-panel" title="Register" style="width:400px;padding:10px">
+		<table>
+			<tr>
+				<td>User Name:</td>
+				<td><input class="easyui-validatebox" name="name" value="{name}" data-options="required:true,validType:'length[3,10]'"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input name="email" value="{email}" class="easyui-validatebox"  data-options="required:true,validType:'email'"></td>
+			</tr>
+			<tr>
+				<td>日期:</td>
+				<td><input  name="date" value="{date}"  class="easyui-datebox"></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><input name="addr" value="{addr}"  class="easyui-validatebox" data-options="required:true,validType:'url'"></td>
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td><input name="code" value="{code}"  class="easyui-validatebox" data-options="required:true"></td>
+			</tr>
+		</table>
+	</div>
+	<div class="search_btn"><input type="button" value="保存" id="form_save_btn" class="btn btn_gray">
+          	<input type="button" value="重置" id="form_reset_btn" class="btn btn_gray">
+          	<input type="button" value="返回" id="form_back_btn" class="btn btn_gray">
+          </div>
+</form>
+

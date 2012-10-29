@@ -1,0 +1,98 @@
+SWFUpload 上传实例...
+<link href="js/lib/SWFUpload2.2/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/lib/SWFUpload2.2/swfupload/swfupload.js"></script>
+
+
+<p>
+	多文件上传实例： <br>
+	按钮背景图片更换：button_image_url: "js/lib/SWFUpload2.2/swfupload/images/TestImageNoText_65x29.png",
+</p>
+<script type="text/javascript" src="js/lib/SWFUpload2.2/swfupload/js/swfupload.queue.js"></script>
+<script type="text/javascript" src="js/lib/SWFUpload2.2/swfupload/js/fileprogress.js"></script>
+<script type="text/javascript" src="js/lib/SWFUpload2.2/swfupload/js/handlers.js"></script>
+<div>
+			<!-- 进度 -->
+	<div class="fieldset flash" id="fsUploadProgress"></div>
+			<!-- 完成状态 -->
+	<div id="divStatus"></div>
+			<!-- 上传按钮 -->
+	<div>
+		<span id="spanButtonPlaceHolder"></span>
+		<input id="btnCancel" type="button" value="取消" onclick="swfu.cancelQueue();" disabled="disabled" style="margin-left: 2px; font-size: 8pt; height: 29px;" />
+	</div>
+</div>
+<script type="text/javascript">
+		var swfu;
+		var settings = {
+			flash_url : "js/lib/SWFUpload2.2/swfupload/swfupload.swf",
+			upload_url: "upload.php",
+			post_params: {"PHPSESSID" : "<?php echo session_id(); ?>"},
+			file_size_limit : "100 MB",
+			file_types : "*.*",
+			file_types_description : "All Files",
+			file_upload_limit : 100,
+			file_queue_limit : 0,
+			custom_settings : {
+				progressTarget : "fsUploadProgress",
+				cancelButtonId : "btnCancel"
+			},
+			debug: false,
+
+			// Button settings
+			button_image_url: "js/lib/SWFUpload2.2/swfupload/images/TestImageNoText_65x29.png",
+			button_width: "65",
+			button_height: "29",
+			button_placeholder_id: "spanButtonPlaceHolder",
+			button_text: '<span class="theFont">上传</span>',
+			button_text_style: ".theFont { font-size: 16; }",
+			button_text_left_padding: 12,
+			button_text_top_padding: 3,
+			
+			// The event handler functions are defined in handlers.js
+			file_queued_handler : fileQueued,
+			file_queue_error_handler : fileQueueError,
+			file_dialog_complete_handler : fileDialogComplete,
+			upload_start_handler : uploadStart,
+			upload_progress_handler : uploadProgress,
+			upload_error_handler : uploadError,
+			upload_success_handler : uploadSuccess,
+			upload_complete_handler : uploadComplete,
+			queue_complete_handler : queueComplete	// Queue plugin event
+		};
+		swfu = new SWFUpload(settings);
+	</script>
+	
+	
+	
+	
+	
+
+	<p>单文件上传实例:</p>
+	<span id="spanButtonPlaceHolder2"></span>
+	<script type="text/javascript" src="js/lib/SWFUpload2.2/swfupload/js/single_handlers.js"></script>
+	<script type="text/javascript">
+		var upload2 = new SWFUpload({
+			flash_url : "js/lib/SWFUpload2.2/swfupload/swfupload.swf",
+			upload_url: "upload.php",
+			post_params: {"PHPSESSID" : "<?php echo session_id(); ?>"},
+			file_size_limit : "5 MB",
+			file_types : "*.*",
+			file_types_description : "All Files",
+			file_upload_limit : 100,
+			file_queue_limit : 1,
+			debug: false,
+	
+			// Button settings
+			button_image_url: "js/lib/SWFUpload2.2/swfupload/images/XPButtonUploadText_61x22.png",
+			button_width: 61,
+			button_height: 22,
+			button_placeholder_id: "spanButtonPlaceHolder2",
+			
+			file_queue_error_handler : s_fileQueueError,
+			file_dialog_complete_handler : s_fileDialogComplete,
+			upload_error_handler : s_uploadError,
+			upload_success_handler : s_uploadSuccess
+		});
+	</script>
+	
+	

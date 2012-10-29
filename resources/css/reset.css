@@ -1,0 +1,64 @@
+
+/* 结构 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video 
+{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%; 
+font: 12px/1.5em Helvetica,"宋体","Lucida Grande",Arial,sans-serif;
+} 
+
+/* 统一等宽字体 */
+code, kbd, pre, samp { font-family:courier new, courier, monospace; } 
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small { font-size:12px; } 
+
+/* 斜体扶正 */
+address, cite, dfn, em, var { font-style:normal; } 
+
+/* 重置列表元素 */
+ul, ol { list-style:none; } 
+
+/* 使表单元素在 ie 下能继承字体大小；optgroup 无法扶正 */
+button, input, select, textarea { font-size:100%; } 
+input, select , button { vertical-align:middle; } 
+
+/* Clear Fix */
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix { display:inline-block; }/* Safari, Chrome, Opera, FF */
+.clearfix {display:block;} /* IE */ 
+
+/* HTML 5 */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display:block; }
+command,datalist,keygen,mark,meter,progress,rp,rt,ruby,time,wbr{display:inline;}
+nav ul { list-style:none; } 
+
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold;}
+del { text-decoration:line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help;}
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration:none; outline:none;}
+a:hover{ text-decoration:underline;} 
+
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;} 
+
+p { word-spacing:0.125em; hyphenate:auto; hyphenate-lines:3; margin-top:1em;}
+

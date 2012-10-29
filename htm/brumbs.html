@@ -1,0 +1,26 @@
+<div>
+	面包屑导航演示。。。<br>
+	现在只需要配置global中的_navData树形数据即可
+	
+	<pre>
+		 //面包屑配置，nav为文件名，注意不能重复
+		 _navData = {
+		 		text:'首页guide',
+		 		nav:'default',
+		 		children:[
+		 			{text:'用户管理',nav:'user'},
+		 			{
+		 				text:'系统管理',
+		 				nav:'sys',
+		 				children:[
+		 					{text:'未封装查询列表页',nav:'index1'},
+		 					{text:'Index1_edit',nav:'index1_edit'},
+		 					{text:'查询列表页',nav:'test'},
+		 					{text:'TEST2',nav:'test2'},
+		 					{text:'面包屑',nav:'brumbs'}
+		 				]
+		 			}
+		 		]
+		 }
+	</pre>
+</div>

@@ -1,0 +1,198 @@
+首页面 ,guide...
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	background:navy;
+	font-size:10.0pt;
+	font-family:宋体;}
+ /* Page Definitions */
+ @page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b><span lang=ZH-CN style='font-family:宋体'>第一步：创建模板</span></b></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=ZH-CN
+style='font-family:宋体'>在项目的</span>htm<span lang=ZH-CN style='font-family:宋体'>文件夹下创建一个</span>html<span
+lang=ZH-CN style='font-family:宋体'>格式的</span>html<span lang=ZH-CN
+style='font-family:宋体'>片段</span>(<span lang=ZH-CN style='font-family:宋体'>不能包含</span>html,head,body<span
+lang=ZH-CN style='font-family:宋体'>标签</span>),</p>
+
+<p class=MsoNormal><span lang=ZH-CN style='font-family:宋体'>如：</span></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test2.html:</p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div&gt;
+test2…….&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span lang=ZH-CN style='font-family:宋体'>第二步：创建模板的编译和控制文件</span></b></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang=ZH-CN
+style='font-family:宋体'>在项目</span>js/controller<span lang=ZH-CN
+style='font-family:宋体'>目录下创建一个与</span>html<span lang=ZH-CN style='font-family:
+宋体'>模板一样名字的</span>js<span lang=ZH-CN style='font-family:宋体'>文件格式如下</span>,<span
+lang=ZH-CN style='font-family:宋体'>类名不修改</span></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test2.js<span
+lang=ZH-CN style='font-family:宋体'>文件：</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='font-size:12.0pt;font-family:Cambria;color:black;background:yellow'>App</span><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>.controller =
+Ambow.extend(<span style='background:yellow'>App</span>.Controller,{</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tplName:</span><span
+style='font-size:12.0pt;font-family:Cambria;color:#2A00FF'>'test2'</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt;
+text-autospace:none'><span style='font-size:12.0pt;font-family:Cambria;
+color:black'>});</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b><span style='font-size:12.0pt;
+font-family:Cambria;color:#7F0055'>new</span></b><span style='font-size:12.0pt;
+font-family:Cambria;color:black'> <span style='background:yellow'>App</span>.controller();</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=ZH-CN
+style='font-family:宋体'>以上是一个最简单的空白页面，其中</span>tplName<span lang=ZH-CN
+style='font-family:宋体'>必须，是要载入的模板文件名</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p class=MsoNormal><b><span lang=ZH-CN style='font-family:宋体'>第三步：将模板加载到内容区</span>(</b><b><span
+lang=ZH-CN style='font-family:宋体'>相当于多页面的跳转，以下用跳转来代替</span>)</b></p>
+
+<p class=MsoNormal><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=ZH-CN
+style='font-family:宋体'>在</span>js<span lang=ZH-CN style='font-family:宋体'>中添加跳转控制代码：</span>App.History.load(‘test2’);</p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=ZH-CN
+style='font-family:宋体'>如我们点一个工具栏的</span>button<span lang=ZH-CN
+style='font-family:宋体'>跳到这一样可以这样写：</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:21.0pt;text-autospace:none'><span style='font-size:12.0pt;
+font-family:Cambria;color:#3F7F5F'>//</span><span lang=ZH-CN style='font-size:
+12.0pt;font-family:宋体;color:#3F7F5F'>额外自定义工具栏按钮，没有可以不写</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+toolBarExtra:[</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id:</span><span
+style='font-size:12.0pt;font-family:Cambria;color:#2A00FF'>'btntest2'</span><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text:</span><span
+style='font-size:12.0pt;font-family:Cambria;color:#2A00FF'>'</span><span
+lang=ZH-CN style='font-size:12.0pt;font-family:宋体;color:#2A00FF'>测试</span><span
+style='font-size:12.0pt;font-family:Cambria;color:#2A00FF'>2'</span><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; handler:</span><b><span
+style='font-size:12.0pt;font-family:Cambria;color:#7F0055'>function</span></b><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>(){</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='background:yellow'>App</span>.History.load(</span><span
+style='font-size:12.0pt;font-family:Cambria;color:#2A00FF'>'test2'</span><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>);</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+style='font-size:12.0pt;font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-size:12.0pt;
+font-family:Cambria;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=ZH-CN
+style='font-family:宋体'>如此一个有模板，有控制，有跳转的简单页就完成了。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b><span lang=ZH-CN
+style='font-family:宋体'>配置面包屑导航</span></b><span lang=ZH-CN style='font-family:
+宋体'>：</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+lang=ZH-CN style='font-family:宋体'>这时会发现面包屑导航缺失或者还是上一页没变化。那么请按以下操作</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+lang=ZH-CN style='font-family:宋体'>在控制代码</span>test2.js<span lang=ZH-CN
+style='font-family:宋体'>的配置中添加</span>navData<span lang=ZH-CN style='font-family:
+宋体'>的配置</span></p>
+
+</div>
+
