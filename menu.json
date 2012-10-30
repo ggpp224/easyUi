@@ -1,0 +1,30 @@
+[
+	{
+		"id":"1",
+		"text":"页面演示",
+		"url":"index1",
+		"children":[
+			{"text":"未封装查询列表页","url":"index1"},
+			{"text":"已封装查询列表页","url":"test"},
+			{"text":"面包屑","url":"brumbs"}
+		]
+	},
+	{
+		"id":"2",
+		"text":"框架使用",
+		"url":"ajax",
+		"children":[
+			{"text":"Ajax","url":"ajax"},
+			{"text":"form","url":"index1_edit"}
+		]
+	},
+	{
+		"id":"3",
+		"text":"额外功能",
+		"url":"swf_upload",
+		"children":[
+			{"text":"SWFUpload","url":"swf_upload"},
+			{"text":"debug","url":"debug"}
+		]
+	}
+]

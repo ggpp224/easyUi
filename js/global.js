@@ -14,6 +14,8 @@
  
  G_HASWRITE = true, //可操作权限
  
+ G_MenuData = {};
+ 
  
  //面包屑配置，nav为文件名，注意不能重复
  _navData = {

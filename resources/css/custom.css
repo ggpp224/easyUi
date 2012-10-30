@@ -1,6 +1,4 @@
-/* CSS结构重置 */
-@import "reset.css";
-/* 自定义样式 */
-@import "style.css";
-/* 自定义样式 */
-@import "ico.css";
+/* 自定义style */
+@import "reset.css"; /* CSS结构重置 */
+@import "style.css"; /* 个性风格样式 */
+@import "ico.css";   /* 图标样式    */
