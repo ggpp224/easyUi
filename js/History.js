@@ -33,5 +33,5 @@
  	
  }
  
- //$.history.load("");
+ $.history.load("");
  App.History.init();

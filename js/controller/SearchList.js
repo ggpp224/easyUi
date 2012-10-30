@@ -5,6 +5,21 @@
  */
 
 App.SearchList = Ambow.extend(App.Controller,{
+	
+	constructor:function(config){
+		if(!this.btnsConfig){
+			this.btnsConfig={}
+			
+		}
+		Ambow.applyIf(this.btnsConfig,{
+				createText:'新建',
+				deleteText: '删除',
+				hasCreate:true,
+				hasDelete:true
+		});
+		
+ 		App.SearchList.superclass.constructor.call(this);
+ 	},
 
 	render: function(){
 		var me = this;
@@ -24,22 +39,7 @@ App.SearchList = Ambow.extend(App.Controller,{
 		    columns:opt.columns||[[]],		    
 		    
 				
-			toolbar:[{
-					id:'btnadd',
-					text:'新建',
-					iconCls:'icon-add',
-					handler:function(){
-						me.onToolbarAddBtnClicked();
-					}
-				},'-',{
-					id:'btncut',
-					text:'删除',
-					iconCls:'icon-cut',
-					handler:function(){
-						var recs = $('#search_List').datagrid('getChecked');
-						me.onToolbarDelBtnClicked(recs);
-					}
-				}],
+			toolbar:[],
 				
 			onClickRow: function(idx,rec,e){
 				//删除
@@ -52,6 +52,33 @@ App.SearchList = Ambow.extend(App.Controller,{
 				me.onRowClicked(idx,rec,e);
 			}
 		};
+		
+		var btnsCfg = this.btnsConfig;
+		var tbar = cfg.toolbar;
+		if(btnsCfg.hasCreate){
+			tbar.push({
+					id:'btnadd',
+					text:btnsCfg.createText,
+					iconCls:'icon-add',
+					handler:function(){
+						me.onToolbarAddBtnClicked();
+					}
+			});
+		}
+		
+		if(btnsCfg.hasDelete){
+			tbar.push('-');
+			tbar.push({
+					id:'btncut',
+					text:btnsCfg.deleteText,
+					iconCls:'icon-cut',
+					handler:function(){
+						var recs = $('#search_List').datagrid('getChecked');
+						me.onToolbarDelBtnClicked(recs);
+					}
+			});
+		}
+		
 		
 		if(this.gridConfig.toolBarExtra){
 			cfg.toolbar = cfg.toolbar.concat(this.gridConfig.toolBarExtra);

@@ -35,7 +35,7 @@ App.controller = Ambow.extend(App.Controller,{
 		        	title:'操作',
 		        	width:200,
 		        	formatter:function(value,rec){
-						return '<a href="#" class="edit">编辑</a><a href="#" class="del">删除</a>';
+						return '<a href="javascript:void(0)" class="edit">编辑</a><a href="javascript:void(0)" class="del">删除</a>';
 					}
 		        }
 		    ]],

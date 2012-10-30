@@ -5,6 +5,7 @@
  */
 
 App.controller = Ambow.extend(App.SearchList,{
+	
 	//模板文件名
 	tplName:'test',
 	
@@ -13,6 +14,13 @@ App.controller = Ambow.extend(App.SearchList,{
 	
 	//新建页文件名
 	createName:'index1_edit',
+	
+	btnsConfig:{
+		createText:'新建用户',
+		deleteText: '删除用户',
+		//hasCreate:false,
+		hasDelete:false
+	},
 
 	//编译模板需要的数据,没有可以不写，或者配{},不能乱写
 	tplData:{
@@ -66,7 +74,7 @@ App.controller = Ambow.extend(App.SearchList,{
 	        	title:'Name',
 	        	width:200,
 	        	formatter:function(value,rec){
-	        		return '<a href="#" class="name">名称</a>';
+	        		return '<span class="name">名称</span>';
 	        	}
 	        },  
 	        {field:'addr',title:'Address ',width:200,align:'right'},
@@ -76,9 +84,9 @@ App.controller = Ambow.extend(App.SearchList,{
 	        	width:200,
 	        	formatter:function(value,rec){
 	        		var tpl = new Ambow.XTemplate(
-	        			'<a href="#" class="edit">编辑</a>',
+	        			'<a href="javascript:void(0)" class="edit">编辑</a>',
 	        			'<tpl if="G_HASWRITE==true">',
-	        			'	<a href="#" class="del">删除</a>',
+	        			'	<a href="javascript:void(0)" class="del">删除</a>',
 	        			'</tpl>'
 	        		);
 					return tpl.apply({});
