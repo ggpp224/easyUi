@@ -4,8 +4,10 @@
 	font-size:12px;
 	margin:0;
 	padding:0;
-	border:1px solid #A4BED4;
+	border:1px solid #d3d3d3;
 	background:#fff;
+	border-radius:3px;
+	padding:3px;
 }
 .combo-text{
 	font-size:12px;
@@ -28,6 +30,7 @@
 	cursor:pointer;
 	opacity:0.6;
 	filter:alpha(opacity=60);
+
 }
 .combo-arrow-hover{
 	opacity:1.0;
@@ -36,4 +39,5 @@
 .combo-panel{
 	background:#fff;
 	overflow:auto;
+	border:1px solid #ddd;
 }

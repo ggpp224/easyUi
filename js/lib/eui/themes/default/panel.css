@@ -3,32 +3,27 @@
 	font-size:12px;
 }
 .panel-header{
-	padding:5px;
+	padding:10px 12px;
 	line-height:15px;
-	color:#15428b;
+	color:#3F3F3F;
 	font-weight:bold;
-	font-size:12px;
-	background:url('images/panel_title.png') repeat-x;
+	font-size:14px;
+	background:url('images/panel_title.gif') repeat-x;
 	position:relative;
-	border:1px solid #99BBE8;
+	border:1px solid #ccc;
 }
 .panel-title{
 	background:url('images/blank.gif') no-repeat;
 }
 .panel-header-noborder{
-	border-width:0px;
-	border-bottom:1px solid #99BBE8;
 }
 .panel-body{
 	overflow:auto;
-	border:1px solid #99BBE8;
-	border-top-width:0px;
+	/*border-right:1px solid #ccc*/
 }
 .panel-body-noheader{
-	border-top-width:1px;
 }
 .panel-body-noborder{
-	border-width:0px;
 }
 .panel-with-icon{
 	padding-left:18px;
@@ -43,8 +38,8 @@
 
 .panel-tool{
 	position:absolute;
-	right:5px;
-	top:4px;
+	right:6px;
+	top:10px;
 }
 .panel-tool a{
 	display:inline-block;

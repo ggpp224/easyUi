@@ -2,9 +2,9 @@
 	font-size:12px;
 	position:absolute;
 	overflow:hidden;
-	background:transparent url('images/panel_title.png');
+	background:#eee url('images/panel_title.gif') repeat-x;
 	padding:5px;
-	border:1px solid #99BBE8;
+	border:1px solid #D3D3D3;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -28,7 +28,7 @@
 }
 .window .window-body{
 	background:#fff;
-	border:1px solid #99BBE8;
+	border:1px solid #D3D3D3;
 	border-top-width:0px;
 }
 .window .window-body-noheader{
@@ -48,7 +48,7 @@
 .window-proxy{
 	position:absolute;
 	overflow:hidden;
-	border:1px dashed #15428b;
+	border:1px dashed #3F3F3F;
 }
 .window-proxy-mask{
 	position:absolute;

@@ -2,26 +2,43 @@
 	background:#fff;
 	overflow:hidden;
 }
+/* 默认标题样式: 全局 */
 .accordion .accordion-header{
-	background:#E0ECFF;
+	background:#efefef;
 	border-top-width:0;
 	cursor:pointer;
+	padding:0;
 }
+/* 默认标题样式 */
 .accordion .accordion-header .panel-title{
-	font-weight:normal;
-}
-.accordion .accordion-header-selected .panel-title{
+	padding:6px;
+	color:#333;
 	font-weight:bold;
+	text-indent:20px;
 }
+.accordion .accordion-header .panel-title:hover{ background:#ccc; border-right:1px solid #ccc;}
+
+/* 选中后标题样式 */
+.accordion .accordion-header-selected .panel-title,
+.accordion .accordion-header-selected .panel-title:hover{
+	padding:6px;
+	color:#fff;
+	font-weight:bold;
+	background:#4b4b4b;
+	border-right:1px solid #4b4b4b;
+}
+
 .accordion-noborder .accordion-header{
 	border-width:0 0 1px;
 }
 .accordion-noborder .accordion-body{
 	border-width:0px;
 }
+/* 标题交互图标: 关闭时 */
 .accordion-collapse{
 	background:url('images/accordion_collapse.png') no-repeat;
 }
+/* 标题交互图标: 展开时 */
 .accordion-expand{
 	background:url('images/accordion_expand.png') no-repeat;
 }

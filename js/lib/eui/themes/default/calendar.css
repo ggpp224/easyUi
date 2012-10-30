@@ -1,6 +1,6 @@
 .calendar{
 	background:#fff;
-	border:1px solid #A4BED4;
+	border:1px solid #d3d3d3;
 	padding:1px;
 	overflow:hidden;
 }
@@ -9,7 +9,7 @@
 }
 .calendar-header{
 	position:relative;
-	background:#E0ECFF;
+	background:#efefef;
 	font-size:12px;
 	height:22px;
 }

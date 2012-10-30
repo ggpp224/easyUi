@@ -5,12 +5,13 @@ a.l-btn{
 	text-decoration:none;
 	display:inline-block;
 	zoom:1;
-	height:24px;
-	padding-right:18px;
+	height:30px;
+	padding-right:10px;
 	cursor:pointer;
 	outline:none;
 }
 a.l-btn-plain{
+	height:26px;
 	background:transparent;
 	padding-right:5px;
 	border:1px solid transparent;
@@ -27,9 +28,9 @@ a.l-btn-disabled{
 a.l-btn span.l-btn-left{
 	display:inline-block;
 	background:url('images/button_span_bg.gif') no-repeat top left;
-	padding:4px 0px 4px 18px;
-	line-height:16px;
-	height:16px;
+	padding:4px 0px 4px 10px;
+	line-height:22px;
+	height:22px;
 }
 a.l-btn-plain span.l-btn-left{
 	background:transparent;
@@ -56,12 +57,16 @@ a:hover.l-btn span.l-btn-left{
 }
 
 a:hover.l-btn-plain{
-	border:1px solid #7eabcd;
-	background:url('images/button_plain_hover.png') repeat-x left bottom;
+	border:1px solid #999;
+	background:#e3e3e3;
+	/*background:url('images/button_plain_hover.png') repeat-x left bottom;*/
 	_padding:0px 5px 0px 0px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-moz-box-shadow:0px 0px 5px #aaa inset;               /* For Firefox3.6+ */
+	-webkit-box-shadow:0px 0px 5px #aaa inset;            /* For Chrome5+, Safari5+ */
+	box-shadow:0px 0px 5px #aaa inset;  
 }
 a:hover.l-btn-disabled{
 	background-position:top right;
@@ -70,5 +75,5 @@ a:hover.l-btn-disabled span.l-btn-left{
 	background-position:top left;
 }
 a.l-btn .l-btn-focus{
-	outline:#0000FF dotted thin;
+	outline:#000 dotted thin;
 }
