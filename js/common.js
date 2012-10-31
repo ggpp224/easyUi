@@ -10,6 +10,14 @@ Ambow.load = function(url){
 	
 }
 
+/**
+ * load一个html，带面包屑的，但不建议使用
+ * @param {} tplName
+ */
+Ambow.loadHtml = function(tplName){
+	new App.Controller({tplName:tplName});
+	window.location.hash=tplName;
+}
 
 //将列表上的checkbox置为非选
 function disCheckedHeader(){

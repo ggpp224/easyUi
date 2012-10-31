@@ -50,7 +50,8 @@
  				nav:'swf_upload',
  				children:[
  					{"text":"SWFUpload","nav":"swf_upload"},
-					{"text":"debug","nav":"debug"}
+					{"text":"debug","nav":"debug"},
+					{"text":"系统","nav":"sys"}
  				]
  			}
  		]

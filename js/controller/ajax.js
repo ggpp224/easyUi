@@ -53,6 +53,10 @@ App.controller = Ambow.extend(App.Controller,{
 			});
 		});
 		
+		$('#loadHtmlBtn').click(function(){
+			Ambow.loadHtml('sys')
+		});
+		
 	}
 	
 	

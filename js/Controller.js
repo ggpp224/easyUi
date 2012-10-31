@@ -5,13 +5,17 @@
  */
  
  App.Controller = Ambow.extend(Object,{
- 	constructor:function(config){		
+ 	constructor:function(config){
+ 		
  		this.required();
  		
  		//模板数据
  		var tplData = this.tplData||{};
  		
  		var me = this;
+ 		if(!this.tplName){
+ 			this.tplName=config.tplName;
+ 		}
  		//请求处理模板
  		$.get(G_ROOT+'htm/'+this.tplName+'.html',function(result){
  			me.tpl = new Ambow.XTemplate(result);
