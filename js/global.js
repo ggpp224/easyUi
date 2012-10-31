@@ -19,19 +19,38 @@
  
  //面包屑配置，nav为文件名，注意不能重复
  _navData = {
- 		text:'首页guide',
- 		nav:'default',
+ 		text:'首页',
+ 		nav:'home',
  		children:[
- 			{text:'用户管理',nav:'user'},
  			{
- 				text:'系统管理',
- 				nav:'sys',
+ 				text:'页面演示',
+ 				nav:'default',
  				children:[
- 					{text:'未封装查询列表页',nav:'index1'},
- 					{text:'Index1_edit',nav:'index1_edit'},
- 					{text:'查询列表页',nav:'test'},
- 					{text:'TEST2',nav:'test2'},
- 					{text:'面包屑',nav:'brumbs'}
+ 					{"text":"guid","nav":"default"},
+					{"text":"未封装查询列表页","nav":"index1"},
+					{
+						"text":"已封装查询列表页",
+						"nav":"test",
+						children:[
+							{text:'Index1_edit',nav:'index1_edit'}
+						]
+					},
+					{"text":"面包屑","nav":"brumbs"}
+ 				]
+ 			},
+ 			{
+ 				text:'框架使用',
+ 				nav:'ajax',
+ 				children:[
+ 					{"text":"Ajax","nav":"ajax"}
+ 				]
+ 			},
+ 			{
+ 				text:'额外功能',
+ 				nav:'swf_upload',
+ 				children:[
+ 					{"text":"SWFUpload","nav":"swf_upload"},
+					{"text":"debug","nav":"debug"}
  				]
  			}
  		]

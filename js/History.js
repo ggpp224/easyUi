@@ -12,7 +12,6 @@
  	},
  	
  	navigate: function(token){
- 		
  		if(Ambow.isEmpty(token)){
  			return;
  		}
@@ -32,6 +31,10 @@
  	}
  	
  }
+  App.History.init();
+  var hash = window.location.hash;
+  hash = hash.substring(1);
+  window.location.hash="";
+ $.history.load(hash);
+	
  
- $.history.load("");
- App.History.init();
