@@ -24,7 +24,8 @@
 		"url":"swf_upload",
 		"children":[
 			{"text":"SWFUpload","url":"swf_upload"},
-			{"text":"debug","url":"debug"}
+			{"text":"debug","url":"debug"},
+			{"text":"highCharts","url":"highCharts"}
 		]
 	}
 ]
