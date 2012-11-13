@@ -41,7 +41,7 @@ ul,li{ margin:0; padding:0; list-style:none}
 .leftsidebar li:hover {background: url(../images/leftsidebar_bg.gif) repeat-x;}
 .leftsidebar li:hover a { color: #000;}
 .leftsidebar li:active { background: url(../images/leftsidebar_bg.gif) repeat-x bottom;}
-.leftsidebar li a { color: #333; font-size: 12px; text-decoration: none;}
+.leftsidebar li a { color: #333; font-size: 12px; text-decoration: none;display:block;}
 .leftsidebar li.current a { color: #fff;}
 .leftsidebar li.current { background: url(../images/nav_current.gif) repeat-x; }
 
