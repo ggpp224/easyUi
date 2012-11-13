@@ -147,7 +147,8 @@ App.controller = Ambow.extend(App.Controller,{
 		G_URL_APPEND = {
 			model: rec
 		}
-		App.History.load("index1_edit");
+		//App.History.load("index1_edit");
+		jumpTo("index1_edit");
 	}
 	
 });
