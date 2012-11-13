@@ -14,6 +14,8 @@
  
  G_HASWRITE = true, //可操作权限
  
+ G_CURRENT_TERM = '';
+ 
  G_MenuData = {};
  
  
@@ -35,7 +37,9 @@
 							{text:'Index1_edit',nav:'index1_edit'}
 						]
 					},
-					{"text":"面包屑","nav":"brumbs"}
+					{"text":"面包屑","nav":"brumbs"},
+					{"text":"tab","nav":"tab"},
+					{"text":"已封装的tab列表页","nav":"tab2"}
  				]
  			},
  			{
@@ -51,7 +55,7 @@
  				children:[
  					{"text":"SWFUpload","nav":"swf_upload"},
 					{"text":"debug","nav":"debug"},
-					{"text":"系统","nav":"sys"}
+					{"text":"HighCharts","nav":"highCharts"}
  				]
  			}
  		]

@@ -5,10 +5,10 @@ a:active, a:visited { outline: medium none;}
 a:hover {text-decoration: underline;}
 ul,li{ margin:0; padding:0; list-style:none}
 
-/* Layout 框架 
+/* Layout 框架
 ------------------------------------------------------------------------*/
 /* Header */
-#header{ margin:0; padding:0; height:110px; overflow:hidden; background:#f5f5f5}
+#header{ margin:0; padding:0; height:110px; /* overflow:hidden;  */background:#f5f5f5}
 
 /* Footer */
 #footer{ padding:8px; height:18px; font-weight:bold; color:#ccc; background:#666; }
@@ -282,7 +282,7 @@ button.go{ padding:3px; font-weight:normal}
 
 /*table*/
 .student_table{ border-top:1px solid #ddd; border-left:1px solid #ddd; margin:10px 0;}
-.student_table td{ border-bottom:1px solid #ddd; padding:5px 10px; border-right:1px solid #ddd} 
+.student_table td{ border-bottom:1px solid #ddd; padding:5px 10px; border-right:1px solid #ddd}
 .student_table td img { border:1px solid #ddd; padding:3px; margin-bottom:6px;}
 .user_avatar{ clear:both; height:24px; text-align:center}
 .student_table td.col_name {font-weight:bold; width:120px; height:24px; line-height:24px; text-align:right; background:#f8f8f8;}
@@ -359,7 +359,7 @@ button.go{ padding:3px; font-weight:normal}
 .result_student .mianxiu{ padding-left:20px; background:url(../images/ico_operate.gif) 0 -360px no-repeat; margin-right:10px}
 .result_student .notong{ padding-left:20px; background:url(../images/ico_operate.gif) 0 -390px no-repeat; }
 
-/* -------------- 操作反馈提示 BOX -------------*/ 
+/* -------------- 操作反馈提示 BOX -------------*/
 /* 默认灰 */
 .project { overflow:hidden; margin:10px}
 .project .item{ padding:10px 10px 10px 70px; float:left; width:200px; margin-bottom:10px;}
@@ -380,7 +380,7 @@ button.go{ padding:3px; font-weight:normal}
 .box-error-msg ol { margin-top: 0; margin-bottom: 0;}
 .box a:hover { background: transparent !important;}
 
-/* --------------  弹出层 样式，图标 -------------*/ 
+/* --------------  弹出层 样式，图标 -------------*/
 .overlay_box{ padding:0 14px;}
 .overlay_btn{ padding:8px 0; text-align:center; background:#eee; border-top:1px solid #ddd; height:26px;}
 .overlay_delete_box{ padding:10px; overflow:hidden; zoom:1; background:#fff;}
@@ -500,3 +500,4 @@ a.chooseItem:active{background: url(../images/choose.gif) no-repeat 0 -54px; tex
 .chooseList{ position:absolute; border:1px solid #c0c0c0; padding:10px; background:#fff; border-radius:5px; left:96px; top:28px;}
 
 .tdalt div{ clear:both}
+

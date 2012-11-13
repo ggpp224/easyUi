@@ -6,6 +6,7 @@
  
 
  //加载菜单
+ LeftNav.init();
  Menu.init();
  
  App.container = $('#content');

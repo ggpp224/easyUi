@@ -36,5 +36,7 @@
   hash = hash.substring(1);
   window.location.hash="";
  $.history.load(hash);
+ var jumpTo = App.History.load;
+ 
 	
  
