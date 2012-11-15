@@ -185,7 +185,7 @@
 			if (data[i]['selected']){
 				(function(){
 					for(var i=0; i<selected.length; i++){
-						if (v == selected[i]) return;
+						if (v === selected[i]) return;
 					}
 					selected.push(v);
 				})();

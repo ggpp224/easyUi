@@ -18,6 +18,8 @@
  });
  var hash = window.location.hash;
  hash = hash.replace(/#/g,'');
+ 
+ //如果hash为空
  if(Ambow.isEmpty(hash)){
  	Ambow.load('js/controller/index1.js');
  }
