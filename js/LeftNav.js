@@ -27,6 +27,7 @@
 					topItems.removeClass('current');
 					var me = $(this);
 					me.addClass('current');
+					alert($());
 					var val = me.attr("mid").substr(2);
 					G_CURRENT_TERM = val;
 				});

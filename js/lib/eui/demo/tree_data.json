@@ -4,12 +4,10 @@
 	"iconCls":"icon-ok",
 	"children":[{
 		"id":2,
-		"text":"File1",
-		"checked":true
+		"text":"File1"
 	},{
 		"id":3,
 		"text":"Folder2",
-		"state":"open",
 		"children":[{
 			"id":4,
 			"text":"File2",
@@ -17,12 +15,10 @@
 				"p1":"value1",
 				"p2":"value2"
 			},
-			"checked":true,
 			"iconCls":"icon-reload"
 		},{
 			"id": 8,
 			"text":"Folder3",
-			"state":"closed",
 			"children":[{
 				"id":9,
 				"text":"File31"
@@ -34,7 +30,6 @@
 	}]
 },{
 	"text":"Languages",
-	"state":"closed",
 	"children":[{
 		"id":"j1",
 		"text":"Java"
