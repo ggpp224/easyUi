@@ -26,19 +26,19 @@
   * 	}
   * }
   */
- new Header({
- 	logoPath:'http://localhost/easyUi/js/lib/eui/themes/default/images/layout_arrows.png',
-   	logoAlt:'图片提示',
-   	backText:'返回文字显示',
-   	userName:'用户名',
-   	onBackClicked:function(e){
-   		window.location.href="www.baidu.com";
-   	},
-   	onLogoutClicked:function(e){
-   		//点退出时处理事件
-   		alert('退出');
-   	}
- });
+// new Header({
+// 	logoPath:'http://localhost/easyUi/js/lib/eui/themes/default/images/layout_arrows.png',
+//   	logoAlt:'图片提示',
+//   	backText:'返回文字显示',
+//   	userName:'用户名',
+//   	onBackClicked:function(e){
+//   		window.location.href="www.baidu.com";
+//   	},
+//   	onLogoutClicked:function(e){
+//   		//点退出时处理事件
+//   		alert('退出');
+//   	}
+// });
  
  App.container = $('#content');
  App.container.bind('beforeLoad',function(){
