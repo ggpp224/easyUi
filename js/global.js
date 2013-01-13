@@ -54,7 +54,6 @@
  				nav:'swf_upload',
  				children:[
  					{"text":"SWFUpload","nav":"swf_upload"},
-					{"text":"debug","nav":"debug"},
 					{"text":"HighCharts","nav":"highCharts"}
  				]
  			}
