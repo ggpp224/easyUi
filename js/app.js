@@ -9,7 +9,6 @@
  LeftNav.init();
  Menu.init();
  
- 
   /**
   * @param {Object} config
   * {

@@ -3,11 +3,19 @@
 Ambow.load = function(url){
 	var node = $('#content');
 	node.trigger('beforeLoad');
-	$.getScript(url,function(responseText, textStatus, XMLHttpRequest){
-		
-		node.trigger('afterLoad');
-	});
+//	$.getScript(url,function(responseText, textStatus, XMLHttpRequest){
+//		
+//		node.trigger('afterLoad');
+//	});
 	
+//此方法可以让firedebug调试动态载入的js	
+ $('body').find('script[src="'+url+'"]').remove();
+ var jsEl = document.createElement('script');
+ jsEl.src = url;
+ document.body.appendChild(jsEl);
+ jsEl.onLoad = function(e){
+ 	node.trigger('afterLoad');
+ };
 }
 
 /**
