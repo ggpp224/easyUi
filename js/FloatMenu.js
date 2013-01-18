@@ -24,7 +24,7 @@
 			 					if(threeChildren&&threeChildren.length>0){
 			 						htm += '<ul>'
 				 					Ambow.each(threeChildren,function(r,j){
-				 						htm += '<li><a  href="#'+r.url+'" mid="m_'+r.id+'"  class="'+liClass+'">'+r.text+'</a></li>';
+				 						htm += '<li><a  href="#'+r.url+'" mid="m_'+r.id+'"  class="top_menu_item">'+r.text+'</a></li>';
 				 					});
 				 					htm += '</ul>';
 			 					}
@@ -60,7 +60,6 @@
 				//监听顶级菜单item项单击事件
 				$('a.top_menu_item').click(function(e){
 					$(this).closest('ul').hide();
-					
 				});
 				
 			});
