@@ -19,7 +19,16 @@
 			 		htm += '<ul>';
 			 		Ambow.each(rec_children,function(rec,i){
 			 			
-			 			htm += '<li><a class="top_menu_item" href="#'+rec.url+'">'+rec.text+'</a></li>';	
+			 			htm += '<li><a class="top_menu_item" href="#'+rec.url+'">'+rec.text+'</a>';
+			 					var threeChildren=rec.children,len=0;
+			 					if(threeChildren&&threeChildren.length>0){
+			 						htm += '<ul>'
+				 					Ambow.each(threeChildren,function(r,j){
+				 						htm += '<li><a  href="#'+r.url+'" mid="m_'+r.id+'"  class="'+liClass+'">'+r.text+'</a></li>';
+				 					});
+				 					htm += '</ul>';
+			 					}
+			 			htm += '</li>';
 			 			
 			 		});
 			 		htm += '</ul>';

@@ -17,7 +17,15 @@
 		"text":"框架使用",
 		"url":"ajax",
 		"children":[
-			{"text":"Ajax","url":"ajax"}
+			{
+				"id":"21",
+				"text":"Ajax",
+				"url":"ajax",
+				"children":[
+					{"text":"三级菜单一","url":"default"},
+					{"text":"三级菜单二","url":"default"}
+				]
+			}
 		]
 	},
 	{
