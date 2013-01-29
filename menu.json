@@ -9,7 +9,8 @@
 			{"text":"已封装查询列表页","url":"test"},
 			{"text":"面包屑","url":"brumbs"},
 			{"text":"tab","url":"tab"},
-			{"text":"已封装的tab列表页","url":"tab2"}
+			{"text":"已封装的tab列表页","url":"tab2"},
+			{"text":"列表拖动","url":"drag"}
 		]
 	},
 	{
