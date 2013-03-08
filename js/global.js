@@ -39,7 +39,8 @@
 					},
 					{"text":"面包屑","nav":"brumbs"},
 					{"text":"tab","nav":"tab"},
-					{"text":"已封装的tab列表页","nav":"tab2"}
+					{"text":"已封装的tab列表页","nav":"tab2"},
+					{"text":"tree","nav":"tree"}
  				]
  			},
  			{
